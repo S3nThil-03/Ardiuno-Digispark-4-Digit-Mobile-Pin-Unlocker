@@ -22,10 +22,4 @@ The **Digispark Unlock Project** demonstrates how to use the Digispark ATtiny85 
 - **Arduino IDE**: Used for writing and uploading the code to the Digispark.
 - **DigiKeyboard Library**: Required for simulating keyboard inputs on the Digispark.
 
-## Installation
 
-To get the project up and running, follow these steps:
-
-1. **Clone the Repository**:
-   ```bash
-   git clone [https://github.com/Senthil2155/Ardiuno-Digispark-Mobile-Pin-Unlock.git](https://github.com/Senthil21555)
