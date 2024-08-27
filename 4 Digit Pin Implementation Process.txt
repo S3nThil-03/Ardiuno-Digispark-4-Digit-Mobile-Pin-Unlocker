@@ -1,0 +1,89 @@
+1. Code Overview
+Purpose: This Arduino sketch is designed for the Digispark ATtiny85 microcontroller. It attempts to unlock a mobile device's screen by brute-forcing the screen lock PIN using a predefined or iteratively generated passcode.
+2. Hardware Requirements
+Microcontroller: Digispark ATtiny85
+Components:
+Digispark board
+Micro USB cable
+(Optional) A mobile device for testing
+3. Code Breakdown
+Variables:
+pass[]: Array to store passcodes (not currently used for brute-forcing).
+pin[]: Example PIN array for entering a specific PIN.
+pinIndex: Tracks the current digit of the PIN being entered.
+pinEntered: A flag to indicate if the correct PIN has been entered.
+count: Tracks the number of passcode attempts made.
+Functions:
+setup(): Initializes the program with a 3-second delay.
+loop(): Main loop that attempts to enter the PIN and brute-force the screen lock if necessary.
+enterPIN(): Placeholder function for entering a PIN.
+isScreenLocked(): Placeholder function to check if the screen is locked.
+4. How It Works
+The program first waits for a 3-second delay.
+It checks if the screen is locked using the isScreenLocked() function.
+If the screen is locked, it starts brute-forcing the passcode from 0000 to 9999.
+The code includes a delay of 3 seconds after each attempt and a 30-second delay after every 5 attempts to prevent the system from being locked out due to too many incorrect attempts.
+5. Usage Instructions
+Flash the code onto the Digispark ATtiny85.
+Connect the Digispark to the mobile device (if needed).
+The device will attempt to brute-force the PIN.
+6. Important Notes
+Security Considerations: This code should only be used for educational purposes or on devices you own and have permission to test. Unauthorized use of brute-forcing techniques on devices you do not own may be illegal.
+Code Customization: The functions enterPIN() and isScreenLocked() are placeholders and should be customized according to your specific device and requirements.
+7. Sample Output
+The serial monitor will display each attempted passcode in sequence.
+8. Code Snippet
+#include "DigiKeyboard.h"
+
+int pass[] = {39, 30, 31, 32, 33, 34, 35, 36, 37, 38};
+int pin[] = {10, 20, 30, 40}; // Example PIN
+int pinIndex = 0;
+bool pinEntered = false;
+int count = 0;
+
+void setup() {
+    DigiKeyboard.delay(3000);
+}
+
+void loop() {
+    if (!pinEntered) {
+        enterPIN();
+        return;
+    }
+
+    if (!isScreenLocked()) {
+        for (int i = 0; i <= 9999; i++) {
+            int a = i / 1000;
+            int b = (i / 100) % 10;
+            int c = (i / 10) % 10;
+            int d = i % 10;
+
+            Serial.print(a);
+            Serial.print(b);
+            Serial.print(c);
+            Serial.println(d);
+
+            delay(3000);
+
+            count++;
+
+            if (count == 5) {
+                delay(30000);
+                count = 0;
+            }
+        }
+    }
+}
+
+void enterPIN() {
+    // Implement your PIN entry logic here
+}
+
+bool isScreenLocked() {
+    // Implement your logic to check if the screen is locked
+    return false;
+}
+9. Contributing
+Feel free to contribute to this repository by submitting pull requests or reporting issues.
+10. License
+Include a license (e.g., MIT License) that specifies the terms under which the code can be used, modified, and distributed.
