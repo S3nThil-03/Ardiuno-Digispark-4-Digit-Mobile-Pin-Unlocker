@@ -1,6 +1,6 @@
 <div align="center">
   <h2>🔓 Digispark Unlock Project</h2>
-  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7f/Digispark_usb_at85.JPG/250px-Digispark_usb_at85.JPG" alt="Digispark ATtiny85" width="300">
+  <img src="IC.JPG" alt="Digispark ATtiny85" width="300">
   <p><b>A project to demonstrate PIN brute-forcing using the Digispark ATtiny85 microcontroller.</b></p>
 </div>
 
