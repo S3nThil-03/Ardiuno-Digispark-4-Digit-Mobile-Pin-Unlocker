@@ -86,12 +86,6 @@ void loop() {
 
 ---
 
-<div align="center">
-  <h3>📢 Want to Learn More?</h3>
-  <p>Check out <a href="https://digistump.com/">Digistump Official Website</a> for more Digispark projects!</p>
-</div>
-
----
 
 ## 📝 License
 This project is licensed under the **MIT License**. You are free to modify and distribute it **for educational purposes only**.
