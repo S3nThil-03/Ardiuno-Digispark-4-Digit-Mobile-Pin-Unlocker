@@ -1,25 +1,34 @@
-# Digispark Unlock Project
+<h2>Digispark Unlock Project 🔓</h2>
 
-## Overview
+<h3>Overview 📌</h3>
+<p>The <strong>Digispark Unlock Project</strong> demonstrates how to use the Digispark ATtiny85 microcontroller to automate the process of brute-forcing a mobile device’s lock screen PIN. This project is intended for educational purposes, showcasing how hardware can interact with and manipulate digital systems. Please use this project responsibly and only on devices you own or have explicit permission to test.</p>
 
-The **Digispark Unlock Project** demonstrates how to use the Digispark ATtiny85 microcontroller to automate the process of brute-forcing a mobile device’s lock screen PIN. This project is intended for educational purposes, showcasing how hardware can interact with and manipulate digital systems. Please use this project responsibly and only on devices you own or have explicit permission to test.
+<h3>Features ✨</h3>
+<ul>
+  <li>🔢 <strong>Brute-Force PIN Combination</strong>: Iterates through all possible PIN combinations from <code>0000</code> to <code>9999</code>.</li>
+  <li>⏳ <strong>Configurable Delays</strong>: Includes adjustable delays to manage the rate of attempts and avoid potential lockouts or security features.</li>
+  <li>⚡ <strong>Lightweight and Efficient</strong>: Runs on the low-power Digispark ATtiny85 with minimal resource requirements.</li>
+</ul>
 
-## Features
+<h3>Hardware Requirements 🛠️</h3>
+<ul>
+  <li>🔌 <strong>Microcontroller</strong>: Digispark ATtiny85</li>
+  <li>🔗 <strong>Connections</strong>:
+    <ul>
+      <li>🔌 <strong>Micro USB Cable</strong>: To connect the Digispark to your computer for programming and power.</li>
+      <li>📱 <strong>Mobile Device</strong>: For testing (ensure you have authorization to perform these actions).</li>
+    </ul>
+  </li>
+</ul>
 
-- **Brute-Force PIN Combination**: Iterates through all possible PIN combinations from `0000` to `9999`.
-- **Configurable Delays**: Includes adjustable delays to manage the rate of attempts and avoid potential lockouts or security features.
-- **Lightweight and Efficient**: Runs on the low-power Digispark ATtiny85 with minimal resource requirements.
+<h3>Software Requirements 💻</h3>
+<ul>
+  <li>📝 <strong>Arduino IDE</strong>: Used for writing and uploading the code to the Digispark.</li>
+  <li>⌨️ <strong>DigiKeyboard Library</strong>: Required for simulating keyboard inputs on the Digispark.</li>
+</ul>
 
-## Hardware Requirements
+<h3>Digispark ATtiny85 Microcontroller 🖼️</h3>
+<p><img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Digispark_USB.jpg" alt="Digispark ATtiny85 Microcontroller" width="300"></p>
 
-- **Microcontroller**: Digispark ATtiny85
-- **Connections**:
-  - **Micro USB Cable**: To connect the Digispark to your computer for programming and power.
-  - **Mobile Device**: For testing (ensure you have authorization to perform these actions).
-
-## Software Requirements
-
-- **Arduino IDE**: Used for writing and uploading the code to the Digispark.
-- **DigiKeyboard Library**: Required for simulating keyboard inputs on the Digispark.
-
-
+<h3>Disclaimer ⚠️</h3>
+<p>🚨 <strong>Note:</strong> This project is strictly for educational and ethical hacking purposes. Unauthorized access to devices that you do not own or have permission to test is illegal.</p>
