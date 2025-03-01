@@ -1,6 +1,6 @@
 <div align="center">
   <h2>🔓 Digispark Unlock Project</h2>
-  <img src="IC.JPG" alt="Digispark ATtiny85" width="300">
+  <img src="IC.jpg" alt="Digispark ATtiny85" width="300">
   <p><b>A project to demonstrate PIN brute-forcing using the Digispark ATtiny85 microcontroller.</b></p>
 </div>
 
@@ -34,7 +34,7 @@ The **Digispark Unlock Project** showcases how the **Digispark ATtiny85 microcon
 
 ---
 
-## 📜 Installation & Setup
+## 📝 Installation & Setup
 
 ### Step 1: Install Required Software
 1. Download and install **Arduino IDE** from [Arduino Official Site](https://www.arduino.cc/).
@@ -93,7 +93,7 @@ void loop() {
 
 ---
 
-## 📜 License
+## 📝 License
 This project is licensed under the **MIT License**. You are free to modify and distribute it **for educational purposes only**.
 
 ---
